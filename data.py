@@ -12,9 +12,8 @@ class Data():
         my_email = str(input('Your Email: '))
         my_pswd  = getpass.getpass('Your Password:')
 
-
         send_to = str(input('\nTo Email: '))
         subject = str(input('Subject:  '))
         message = str(input('Message:  '))
 
-        email.cont(my_email, my_pswd, send_to, subject, message)
+        email.mail_content(my_email, my_pswd, send_to, subject, message)

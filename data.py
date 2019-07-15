@@ -9,7 +9,7 @@ class Data():
 
     def get(self):
         my_email = str(input('\nPersonal Email: '))
-        my_pswd  = getpass.getpass('Your Password:')
+        my_pswd  = getpass.getpass('Your Password: ')
 
         send_to = list(map(str, input('\nEmail Destination (if more than one separate by \', \'):\n').split(', ')))
         subject = str(input('Subject: '))

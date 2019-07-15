@@ -12,7 +12,7 @@ class Data():
         my_pswd  = getpass.getpass('Your Password:')
 
         send_to = list(map(str, input('\nEmail Destination (if more than one separate by \', \'):\n').split(', ')))
-        subject = str(input('Subject:  '))
-        message = str(input('Message:  '))
+        subject = str(input('Subject: '))
+        message = str(input('Message: '))
 
         email.mail_content(my_email, my_pswd, send_to, subject, message)

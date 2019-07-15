@@ -9,21 +9,29 @@ serv = server.Server()
 
 class Messenger():
     def __init__(self):
-        pass
+        self.attached = False
+        self.files_attached = 0
 
     def mail_content(self, my_email, my_pswd, dest_email, subject, message):
-        msg = MIMEMultipart()
-        msg['From']    = my_email
-        msg['To']      = dest_email
-        msg['Subject'] = subject
-        msg.attach(MIMEText(message, 'plain'))
+        for email in dest_email:
+            msg = MIMEMultipart()
+            msg['From']    = my_email
+            msg['To']      = email
+            msg['Subject'] = subject
+            msg.attach(MIMEText(message, 'plain'))
 
-        while True:
-            any_file = str(input("\nAdd file (yes, no): "))
-            if any_file.lower() == 'yes':
-                msg.attach(file.annex())
-            else:
-                break
+            while self.attached == False:
+                if self.files_attached == 0:
+                    any_file = str(input("\nAdd file (yes, no): "))
+                else:
+                    any_file = str(input("\nAdd more (yes, no): "))
 
-        print('\n\nSending ...', end='')
-        serv.deliver(msg, my_email, my_pswd, dest_email)
+                if any_file.lower() == 'yes' or any_file.lower() == 'y':
+                    msg.attach(file.annex())
+                    self.files_attached += 1
+                else:
+                    self.attached = True
+
+            print('\nSending emails with {0} attachments...'.format(self.files_attached), end='')
+            serv.deliver(msg, my_email, my_pswd, dest_email)
+            break

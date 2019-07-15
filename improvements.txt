@@ -1,0 +1,4 @@
+add persistence
+allow send to more than one email at once
+verify file existence before trying to attach
+improve UI (messages, etc.)

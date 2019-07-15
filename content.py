@@ -18,10 +18,12 @@ class Messenger():
         msg['Subject'] = subject
         msg.attach(MIMEText(message, 'plain'))
 
-        any_file = str(input("\nAttach a file (yes, no): "))
-        if any_file.lower() == 'yes':
-            msg.attach(file.annex())
-
+        while True:
+            any_file = str(input("\nAdd file (yes, no): "))
+            if any_file.lower() == 'yes':
+                msg.attach(file.annex())
+            else:
+                break
 
         print('\n\nSending ...', end='')
         serv.deliver(msg, my_email, my_pswd, dest_email)

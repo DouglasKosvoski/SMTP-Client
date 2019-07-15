@@ -8,11 +8,10 @@ class Data():
         pass
 
     def get(self):
-        print('\nPERSONAL DATA ...')
-        my_email = str(input('Your Email: '))
+        my_email = str(input('\nPersonal Email: '))
         my_pswd  = getpass.getpass('Your Password:')
 
-        send_to = str(input('\nTo Email: '))
+        send_to = list(map(str, input('\nEmail Destination (if more than one separate by \', \'):\n').split(', ')))
         subject = str(input('Subject:  '))
         message = str(input('Message:  '))
 

@@ -5,7 +5,7 @@ from email.mime.base import MIMEBase
 class File():
     def __init__(self):
         pass
-
+        
     def annex(self):
         file_path  = str(input("File PATH: "))
         filename   = os.path.basename(file_path)

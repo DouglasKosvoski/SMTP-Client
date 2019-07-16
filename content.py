@@ -26,11 +26,15 @@ class Messenger():
                 else:
                     any_file = str(input("\nAdd more (yes, no): "))
 
-                if any_file.lower() == 'yes' or any_file.lower() == 'y':
-                    msg.attach(file.annex())
-                    self.files_attached += 1
-                else:
+                if any_file.lower().startswith('y'):
+                    if file.annex != False:
+                        msg.attach(file.annex())
+                        self.files_attached += 1
+
+                elif any_file.lower().startswith('n'):
                     self.attached = True
+                else:
+                    print('Invalid input')
 
             print('\nSending emails with {0} attachments...'.format(self.files_attached), end='')
             serv.deliver(msg, my_email, my_pswd, dest_email)

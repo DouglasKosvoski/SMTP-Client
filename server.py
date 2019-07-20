@@ -1,4 +1,4 @@
-import smtplib, time, getpass, terminal
+import smtplib, getpass, terminal
 
 class Server():
     def __init__(self):
@@ -35,6 +35,4 @@ class Server():
         #     server.quit()
         #     break
         server.sendmail(my_email, dest_email, text)
-        print(dest_email,'asssss', msg['To'])
-        time.sleep(15)
         server.quit()

@@ -1,2 +1,3 @@
 add persistence
 verify file existence before trying to attach
+fix 'address not found'

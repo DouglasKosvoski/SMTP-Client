@@ -1,4 +1,4 @@
-import smtplib, os, server, file, time
+import smtplib, os, server, file
 from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
@@ -37,9 +37,5 @@ class Messenger():
                     print('Invalid input')
 
             print('\nSending email with {0} attachments...'.format(self.files_attached), end='')
-            try:
-                serv.deliver(msg, my_email, my_pswd, dest_email)
-                break
-            except Exception as e:
-                print(e, '0')
-                time.sleep(10)
+
+            serv.deliver(msg, my_email, my_pswd, dest_email)

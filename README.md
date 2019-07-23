@@ -1,11 +1,18 @@
 ### Terminal_Email
 
-Application that allows to send emails (text and file) all through the Terminal
+Application to send emails and files all through the Unix-Terminal Interface
+
+### Features
+
+- Terminal interface
+- Easily modifiable to be autonomous
+- Send to multiple emails at once
+- Attach files (e.g. audio, images, documents)
+
 
 **To use** 
 
 - First you need to allow less secure apps at https://myaccount.google.com/lesssecureapps
 - Be sure to have python3 installed `sudo apt-get install python3`
-- Then clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`
-- Then run `python3 path/to/main.py`
-
+- Clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`
+- Run `python3 path/to/main.py`

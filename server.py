@@ -13,7 +13,9 @@ class Server():
             try:
                 server.login(my_email, my_pswd)
             except Exception as e: # wrong email, pswd
-                display.clear('Wrong Personal email or Password'.upper())
+                display.clear()
+                print('REMEMBER TO ALLOW THE APP AT https://myaccount.google.com/lesssecureapps\nAND RESTART THE APPLICATION',
+                '\n\nWrong Personal email or Password'.upper())
                 my_email = str(input('\nPersonal Email: '))
                 my_pswd  = getpass.getpass('Your Password: ')
                 msg['From'] = my_email

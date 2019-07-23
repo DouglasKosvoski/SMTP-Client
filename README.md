@@ -17,4 +17,4 @@ Application to send emails and files all through the Unix-Terminal Interface
 - Clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`
 - Run `python3 path/to/main.py`
 
-~[](https://github.com/DouglasKosvoski/Terminal_Email/blob/master/app_image.png)
+![](https://github.com/DouglasKosvoski/Terminal_Email/blob/master/app_image.png)

@@ -12,9 +12,9 @@ Application to send emails and files all through the Unix-Terminal Interface
 
 **To use**
 
-- First you need to allow less secure apps at https://myaccount.google.com/lesssecureapps
-- Be sure to have python3 installed `sudo apt-get install python3`
-- Clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`
-- Run `python3 path/to/main.py`
+- First you need to allow less secure apps at https://myaccount.google.com/lesssecureapps.
+- Be sure to have python3 installed `sudo apt-get install python3`.
+- Clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`.
+- Run `python3 path/to/main.py`.
 
 ![](https://github.com/DouglasKosvoski/Terminal_Email/blob/master/app_image.png)

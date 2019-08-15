@@ -4,10 +4,10 @@ Application to send emails and files all through the Unix-Terminal Interface
 
 ### Features
 
-- Terminal interface
-- Easily modifiable to be autonomous
-- Send to multiple emails at once
-- Attach files (e.g. audio, images, documents)
+- Terminal interface;
+- Easily modifiable to be autonomous;
+- Send to multiple emails at once;
+- Attach files (e.g. audio, images, documents).
 
 
 **To use**

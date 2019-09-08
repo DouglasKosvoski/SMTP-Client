@@ -1,6 +1,6 @@
 ### Terminal_Email
 
-Application to send emails and files all through the Unix-Terminal Interface
+Application to send emails and files all through the Unix-Terminal Interface.
 
 ### Features
 

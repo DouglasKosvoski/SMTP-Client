@@ -1,6 +1,7 @@
-### Terminal_Email
+### SMTP-Client
 
-Application to send emails and files all through the Unix-Terminal Interface.
+Send emails and attach files all through the Unix-Terminal Interface.
+![Image Example](./app_image.png)
 
 ### Features
 
@@ -15,6 +16,4 @@ Application to send emails and files all through the Unix-Terminal Interface.
 - First you need to allow less secure apps at https://myaccount.google.com/lesssecureapps;
 - Be sure to have python3 installed `sudo apt-get install python3`;
 - Clone or download the repository: `git clone https://github.com/DouglasKosvoski/Terminal_Email.git`.
-- Run `python3 path/to/main.py`.
-
-     ![](https://github.com/DouglasKosvoski/Terminal_Email/blob/master/app_image.png)
+- Run `python3 main.py`.

@@ -24,17 +24,5 @@ class Server():
 
         text = msg.as_string()
 
-        # while True:
-        #     try:
-        #         server.sendmail(my_email, dest_email, text)
-        #     except Exception as e:
-        #         # display.clear('\nBe sure to allow less secure apps and try again \nhttps://myaccount.google.com/lesssecureapps')
-        #         print(e)
-        #         print('destination email {0} not valid'.format(dest_email))
-        #         # display.clear('')
-        #         time.sleep(10)
-        #
-        #     server.quit()
-        #     break
         server.sendmail(my_email, dest_email, text)
         server.quit()
